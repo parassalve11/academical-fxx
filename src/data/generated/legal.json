@@ -1,0 +1,545 @@
+{
+  "terms": {
+    "title": "Terms & Conditions",
+    "intro": "These Terms & Conditions (“Terms”) govern your access to and use of Academiya, an online trading-education platform. By using our website, creating an account or purchasing a course, you agree to these Terms. Please read them carefully.",
+    "updated": "15 June 2026",
+    "sections": [
+      {
+        "title": "Acceptance of these Terms",
+        "blocks": [
+          {
+            "p": "By accessing or using Academiya(the “Platform”, “we”, “us” or “our”), you confirm that you have read, understood and agree to be bound by these Terms and by our Privacy Policy, Refund & Cancellation Policy, Risk Disclaimer and Cookie Policy, which are incorporated into these Terms by reference. If you do not agree, you must not use the Platform."
+          }
+        ]
+      },
+      {
+        "title": "Eligibility & age",
+        "blocks": [
+          {
+            "p": "You must be at least 18 years old, or the age of legal majority in your jurisdiction, and capable of forming a binding contract to use the Platform and purchase courses. If you are under this age, you may use the Platform only with the involvement and consent of a parent or legal guardian who agrees to be bound by these Terms on your behalf."
+          },
+          {
+            "p": "By using the Platform you represent that you are not barred from receiving our services under the laws of India or any other applicable jurisdiction, and that all information you provide is accurate and current."
+          }
+        ]
+      },
+      {
+        "title": "Accounts & security",
+        "blocks": [
+          {
+            "p": "Some features require you to create an account. You agree to provide accurate, complete information and to keep it up to date."
+          },
+          {
+            "list": [
+              "You are responsible for safeguarding your login credentials and for all activity that occurs under your account.",
+              "Accounts are personal to you. You may not share, sell, transfer or allow others to use your account or course access.",
+              "Notify us immediately at support@academiyafx.com if you suspect any unauthorised use of your account."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Course access & one-time purchases",
+        "blocks": [
+          {
+            "p": "Courses on Academiya are sold as one-time purchases. Unless stated otherwise on the course page, a single purchase grants you a personal, non-exclusive, non-transferable licence to access that course's content for the access period described at the point of sale."
+          },
+          {
+            "list": [
+              "Prices are listed in Indian Rupees (INR) and are inclusive of applicable taxes unless stated otherwise.",
+              "Payments are processed securely through our payment partner Razorpay. We also accept manual cryptocurrency payments where offered.",
+              "Course content (videos, documents, live classes and downloadable materials) is digital and is delivered electronically once your payment is confirmed.",
+              "Refunds, where available, are governed by our Refund & Cancellation Policy."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Intellectual property",
+        "blocks": [
+          {
+            "p": "All content on the Platform — including course videos, lessons, documents, text, graphics, logos, the “Academiya” name and the “Learn to Lead” tagline, software and the overall look and feel — is owned by us or our licensors and is protected by copyright, trademark and other laws."
+          },
+          {
+            "p": "Your purchase grants a licence to access the content for personal, non-commercial educational use only. You may not copy, reproduce, record, download (except where expressly permitted), redistribute, resell, publicly display, sublicense or create derivative works from any content without our prior written consent."
+          }
+        ]
+      },
+      {
+        "title": "Acceptable use",
+        "blocks": [
+          {
+            "p": "You agree that you will not:"
+          },
+          {
+            "list": [
+              "Share, leak, screen-record or otherwise distribute paid course content to non-purchasers.",
+              "Use the Platform for any unlawful, fraudulent or abusive purpose, or in violation of any applicable laws or regulations.",
+              "Attempt to gain unauthorised access to the Platform, other users' accounts, or our systems, or interfere with the Platform's security or operation.",
+              "Upload or transmit malware, scrape content using automated tools, or circumvent any access controls or digital-rights protections.",
+              "Post unlawful, defamatory, harassing, misleading or infringing content in community areas, comments or reviews."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Instructor & live-class conduct",
+        "blocks": [
+          {
+            "p": "Some courses include live classes, webinars or community interaction with instructors and other learners. To keep these spaces safe and productive:"
+          },
+          {
+            "list": [
+              "Treat instructors and fellow learners with respect. Harassment, hate speech, spam and disruptive behaviour are not tolerated and may result in removal from a session or termination of your account.",
+              "Live sessions may be recorded for the benefit of enrolled learners. By joining, you consent to such recording.",
+              "Instructors share their personal experience and opinions for educational purposes. Their guidance is not, and must not be relied upon as, personalised financial advice — see our Risk Disclaimer."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Educational disclaimer & risk",
+        "blocks": [
+          {
+            "p": "Academiya is an education platform. All content is provided for general informational and educational purposes only and does not constitute investment, financial, legal, tax or trading advice, nor a recommendation to buy or sell any financial instrument."
+          }
+        ]
+      },
+      {
+        "title": "Limitation of liability",
+        "blocks": [
+          {
+            "p": "To the maximum extent permitted by law, the Platform and its content are provided “as is” and “as available” without warranties of any kind, whether express or implied. We do not warrant that the Platform will be uninterrupted, error-free or secure, or that any educational content will produce particular results."
+          },
+          {
+            "p": "To the maximum extent permitted by law, Academiya, its owners, employees and instructors shall not be liable for any indirect, incidental, special, consequential or punitive damages, or for any trading or investment losses, arising out of or in connection with your use of the Platform or any content. Where liability cannot be excluded, our total aggregate liability to you is limited to the amount you paid us for the course giving rise to the claim."
+          }
+        ]
+      },
+      {
+        "title": "Termination",
+        "blocks": [
+          {
+            "p": "We may suspend or terminate your access to the Platform or any course, with or without notice, if you breach these Terms, misuse the Platform, or engage in conduct we reasonably consider harmful to us, our instructors or other users. You may stop using the Platform at any time."
+          },
+          {
+            "p": "Provisions that by their nature should survive termination — including intellectual property, disclaimers, limitation of liability and governing law — will continue to apply."
+          }
+        ]
+      },
+      {
+        "title": "Governing law & jurisdiction",
+        "blocks": [
+          {
+            "p": "These Terms are governed by and construed in accordance with the laws of India, without regard to conflict-of-law principles. You agree that the courts of India shall have exclusive jurisdiction over any dispute arising out of or relating to these Terms or your use of the Platform."
+          }
+        ]
+      },
+      {
+        "title": "Changes to these Terms",
+        "blocks": [
+          {
+            "p": "We may update these Terms from time to time to reflect changes in our services, the law or our practices. When we do, we will revise the “Last updated” date above and, where appropriate, notify you. Your continued use of the Platform after changes take effect constitutes acceptance of the revised Terms."
+          }
+        ]
+      },
+      {
+        "title": "Contact us",
+        "blocks": [
+          {
+            "p": "Questions about these Terms? Reach us at support@academiyafx.com or through our contact page."
+          }
+        ]
+      }
+    ]
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "intro": "This Privacy Policy explains what personal data Academiya collects, how we use and protect it, and the choices you have. We are committed to handling your data responsibly and in line with the intent of India's Digital Personal Data Protection Act, 2023 (the “DPDP Act”) and other applicable laws.",
+    "updated": "15 June 2026",
+    "sections": [
+      {
+        "title": "Who we are",
+        "blocks": [
+          {
+            "p": "Academiya is a trading-education platform based in India. For the purposes of applicable data protection law, we act as the data fiduciary / controller responsible for the personal data we collect about you. You can contact us about privacy matters at support@academiyafx.com."
+          }
+        ]
+      },
+      {
+        "title": "What data we collect",
+        "blocks": [
+          {
+            "p": "We collect only the data we need to provide and improve our services:"
+          },
+          {
+            "list": [
+              "Account data — your name, email address, password (stored in hashed form), profile details and learning progress.",
+              "Payment data — when you buy a course, payments are processed by Razorpay. We receive transaction confirmations and limited details (such as order ID, amount, status and the last digits of a card or the payment method). We do not store full card numbers, CVV or banking credentials — these are handled by Razorpay. For manual crypto payments we may collect the transaction reference you provide.",
+              "Usage data — pages viewed, lessons completed, device and browser type, IP address, approximate location and interaction data, collected via cookies and analytics.",
+              "Communications — messages you send us through contact forms, support requests, community posts, reviews or email."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Cookies & similar technologies",
+        "blocks": [
+          {
+            "p": "We use cookies and similar technologies for authentication, session management, remembering preferences, analytics and translation (via GTranslate). For full details and how to manage them, see our Cookie Policy."
+          }
+        ]
+      },
+      {
+        "title": "How we use your data",
+        "blocks": [
+          {
+            "p": "We use your personal data to:"
+          },
+          {
+            "list": [
+              "Create and manage your account and provide access to courses you purchase.",
+              "Process payments, issue receipts and handle refunds.",
+              "Deliver, personalise and improve our courses, content and platform.",
+              "Communicate with you about your account, purchases, support requests and (where you have opted in) updates and offers.",
+              "Issue and verify certificates of completion.",
+              "Maintain security, prevent fraud and abuse, and comply with our legal obligations."
+            ]
+          },
+          {
+            "p": "We process your data on the basis of your consent, the performance of our contract with you, our legitimate interests in operating the Platform, and compliance with legal obligations."
+          }
+        ]
+      },
+      {
+        "title": "Third parties we share data with",
+        "blocks": [
+          {
+            "p": "We do not sell your personal data. We share it only with trusted service providers who help us run the Platform, and only as needed:"
+          },
+          {
+            "list": [
+              "Razorpay — payment processing for INR course purchases.",
+              "Amazon Web Services (AWS) — cloud hosting, storage and content delivery.",
+              "Email service providers — to send transactional and account-related emails.",
+              "Analytics providers — to understand how the Platform is used and improve it.",
+              "Translation (GTranslate) — to offer the Platform in multiple languages."
+            ]
+          },
+          {
+            "p": "We may also disclose data where required by law, to enforce our terms, or to protect our rights, users or the public."
+          }
+        ]
+      },
+      {
+        "title": "Data retention",
+        "blocks": [
+          {
+            "p": "We keep your personal data only for as long as necessary to provide our services, comply with legal, tax and accounting obligations, resolve disputes and enforce our agreements. When data is no longer needed, we delete or anonymise it. Course-access and certificate records may be retained longer so we can verify completion when requested."
+          }
+        ]
+      },
+      {
+        "title": "Your rights",
+        "blocks": [
+          {
+            "p": "Subject to applicable law, including the DPDP Act, you may have the right to:"
+          },
+          {
+            "list": [
+              "Access the personal data we hold about you and request a summary of our processing.",
+              "Request correction or updating of inaccurate or incomplete data.",
+              "Request erasure of your data where it is no longer required.",
+              "Withdraw consent where processing is based on consent (this will not affect lawful processing carried out before withdrawal).",
+              "Nominate another individual to exercise your rights in the event of death or incapacity, and to raise a grievance with us."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Security",
+        "blocks": [
+          {
+            "p": "We implement reasonable technical and organisational measures to protect your data, including encryption in transit, hashed passwords, access controls and the use of reputable infrastructure providers. No method of transmission or storage is completely secure, however, so we cannot guarantee absolute security."
+          }
+        ]
+      },
+      {
+        "title": "Children's privacy",
+        "blocks": [
+          {
+            "p": "The Platform is intended for adults (18 years or older). We do not knowingly collect personal data from children without verifiable parental or guardian consent. If you believe a child has provided us with personal data without such consent, please contact us and we will take appropriate steps to delete it."
+          }
+        ]
+      },
+      {
+        "title": "International transfers",
+        "blocks": [
+          {
+            "p": "Some of our service providers (such as cloud hosting, payment and analytics partners) may process data on servers located outside India. Where data is transferred internationally, we take steps to ensure it is protected by appropriate safeguards and handled in accordance with applicable law."
+          }
+        ]
+      },
+      {
+        "title": "Changes to this policy",
+        "blocks": [
+          {
+            "p": "We may update this Privacy Policy from time to time. We will revise the “Last updated” date above and, where the changes are significant, take reasonable steps to notify you."
+          }
+        ]
+      },
+      {
+        "title": "Contact us",
+        "blocks": [
+          {
+            "p": "For any privacy questions or to exercise your rights, contact our privacy team at support@academiyafx.com or visit our contact page."
+          }
+        ]
+      }
+    ]
+  },
+  "refund": {
+    "title": "Refund & Cancellation Policy",
+    "intro": "We want you to be confident when you buy a course on Academiya. This policy explains, clearly and honestly, when refunds are available, how digital access affects eligibility, and how to request one. It applies to all one-time course purchases.",
+    "updated": "15 June 2026",
+    "sections": [
+      {
+        "title": "One-time course purchases",
+        "blocks": [
+          {
+            "p": "Courses on Academiya are sold as one-time purchases in Indian Rupees (INR). When your payment is confirmed, you are granted immediate digital access to the course content. Because our courses are digital products delivered electronically, our refund rules reflect the nature of digital goods, as described below."
+          }
+        ]
+      },
+      {
+        "title": "What is refundable",
+        "blocks": [
+          {
+            "p": "You may request a full refund if:"
+          },
+          {
+            "list": [
+              "You were charged in error, charged more than once, or charged the wrong amount for the same order.",
+              "You paid but never received access to the course due to a technical fault on our side that we are unable to resolve.",
+              "The course is materially not as described on its sales page, and we are unable to fix the issue."
+            ]
+          },
+          {
+            "p": "Where a refund is approved, we will refund the amount you paid to the original payment method."
+          }
+        ]
+      },
+      {
+        "title": "What is non-refundable",
+        "blocks": [
+          {
+            "p": "Because course content is digital and access is granted immediately, the following are generally not eligible for a refund:"
+          },
+          {
+            "list": [
+              "Courses where you have already accessed, streamed, downloaded or substantially consumed the content.",
+              "Requests made after the refund window stated on the course page has passed.",
+              "Dissatisfaction based on trading or investment outcomes — our courses are educational and no result is guaranteed (see our Risk Disclaimer).",
+              "Free courses, promotional access, or items expressly marked as non-refundable at the time of purchase.",
+              "Accounts terminated for breach of our Terms & Conditions."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Digital goods & access-granted caveat",
+        "blocks": []
+      },
+      {
+        "title": "Cryptocurrency payments",
+        "blocks": [
+          {
+            "p": "Where we accept manual cryptocurrency payments, please note that crypto transactions are irreversible and subject to network and exchange-rate volatility. Approved refunds for crypto purchases will, at our discretion, be made either in the same cryptocurrency or as store credit, calculated using the value at the time of the original transaction. We are not responsible for losses arising from third-party wallets, exchanges, incorrect wallet addresses or network fees."
+          }
+        ]
+      },
+      {
+        "title": "How to request a refund",
+        "blocks": [
+          {
+            "p": "To request a refund:"
+          },
+          {
+            "list": [
+              "Email us at support@academiyafx.com from the email address linked to your account.",
+              "Include your order ID / payment reference, the course name and the reason for your request.",
+              "Our team will review your request and respond, usually within 3–5 business days."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Processing time",
+        "blocks": [
+          {
+            "p": "Once a refund is approved, we initiate it promptly. Refunds processed through Razorpay typically reach your original payment method within 5–10 business days, depending on your bank or card issuer. Crypto and store-credit refunds are handled as described above. Timings beyond our initiation are determined by payment networks and financial institutions."
+          }
+        ]
+      },
+      {
+        "title": "Contact us",
+        "blocks": [
+          {
+            "p": "Questions about a payment, cancellation or refund? Email support@academiyafx.com or use our contact page. This policy should be read together with our Terms & Conditions."
+          }
+        ]
+      }
+    ]
+  },
+  "disclaimer": {
+    "title": "Risk Disclaimer",
+    "intro": "Please read this disclaimer carefully before using Academiya. It applies to all content, courses, live classes, market data and broker information on our Platform.",
+    "updated": "15 June 2026",
+    "sections": [
+      {
+        "title": "Education only — not financial advice",
+        "blocks": [
+          {
+            "p": "All courses, lessons, videos, documents, live sessions, commentary, market data, tools and any other materials provided by Academiya are for general informational and educational purposes only. They are designed to help you learn how markets work — not to tell you what, when or how much to trade."
+          },
+          {
+            "p": "We are not a registered investment adviser, broker-dealer, portfolio manager or financial planner, and we do not provide personalised investment advice. You should not treat any content as a substitute for professional advice tailored to your circumstances."
+          }
+        ]
+      },
+      {
+        "title": "No guarantee of results",
+        "blocks": [
+          {
+            "p": "There is no guarantee that you will achieve any particular result, gain or income from using our content. Trading success depends on many factors outside our control, including your own decisions, discipline, capital and market conditions. Any examples, hypothetical scenarios or illustrations are for teaching purposes and do not represent a promise of performance."
+          }
+        ]
+      },
+      {
+        "title": "Past performance",
+        "blocks": [
+          {
+            "p": "Past performance — whether of a strategy, an instructor, an instrument or a market — is not indicative of future results. Historical or simulated results have inherent limitations and should never be relied upon as a prediction of what will happen next."
+          }
+        ]
+      },
+      {
+        "title": "Do your own research & consult a professional",
+        "blocks": [
+          {
+            "p": "You are solely and fully responsible for your own trading and investment decisions and for any resulting profits or losses. Before acting on anything you learn here, you should:"
+          },
+          {
+            "list": [
+              "Conduct your own independent research and due diligence.",
+              "Consider your financial situation, objectives and risk tolerance.",
+              "Seek advice from a licensed and qualified financial adviser where appropriate."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Market data is informational & may be delayed",
+        "blocks": [
+          {
+            "p": "Any market data, prices, indices, news or economic-calendar information shown on the Platform is provided for general information only and may be delayed, incomplete or inaccurate. It is sourced from third parties and is not guaranteed to be real-time or error-free. Do not rely on it for live trading decisions or order execution."
+          }
+        ]
+      },
+      {
+        "title": "Brokers & third parties are informational only",
+        "blocks": [
+          {
+            "p": "Any brokers, platforms, tools or third-party services listed or reviewed on Academiya are provided for informational purposes only. A listing or review is not an endorsement, recommendation or guarantee, and we are not responsible for the products, services, conduct or reliability of any third party. You should independently verify any provider and review their terms before opening an account or depositing funds. We may not have any affiliation with the brokers mentioned, and any affiliations will not influence the educational nature of our content."
+          }
+        ]
+      },
+      {
+        "title": "Limitation of liability",
+        "blocks": [
+          {
+            "p": "To the maximum extent permitted by law, Academiya, its owners, employees and instructors accept no liability for any loss or damage — including trading or investment losses — arising from your use of, or reliance on, any content on the Platform. This disclaimer should be read together with our Terms & Conditions."
+          }
+        ]
+      },
+      {
+        "title": "Contact us",
+        "blocks": [
+          {
+            "p": "If you have questions about this disclaimer, contact us at support@academiyafx.com or via our contact page."
+          }
+        ]
+      }
+    ]
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "intro": "This Cookie Policy explains how Academiya uses cookies and similar technologies, why we use them, and how you can control them. It should be read together with our Privacy Policy.",
+    "updated": "15 June 2026",
+    "sections": [
+      {
+        "title": "What are cookies?",
+        "blocks": [
+          {
+            "p": "Cookies are small text files placed on your device when you visit a website. They are widely used to make websites work, to remember your preferences, and to provide information to site owners. We also use similar technologies such as local storage and pixels, which we refer to collectively as “cookies” in this policy."
+          }
+        ]
+      },
+      {
+        "title": "Why we use cookies",
+        "blocks": [
+          {
+            "p": "We use cookies for a few clear purposes:"
+          },
+          {
+            "list": [
+              "Essential cookies — Required for the Platform to work — they keep you signed in (authentication), maintain your session, and remember your place in a course. The Platform cannot function properly without these.",
+              "Preference cookies — Remember choices you make, such as your selected language, region or display preferences, so the Platform behaves the way you expect on each visit.",
+              "Analytics cookies — Help us understand how visitors use the Platform — which pages and lessons are popular and where we can improve. This data is aggregated and used to make the Platform better.",
+              "Translation cookies (GTranslate) — Set by our translation tool, GTranslate, to remember your chosen language and serve the Platform in it across pages."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Third-party cookies",
+        "blocks": [
+          {
+            "p": "Some cookies are set by third-party services we use to run the Platform, including our analytics providers and GTranslate for translation. Our payment partner Razorpay may also set cookies during checkout to process payments securely. These third parties have their own privacy and cookie policies, which we encourage you to review."
+          }
+        ]
+      },
+      {
+        "title": "Managing cookies",
+        "blocks": [
+          {
+            "p": "You can control and delete cookies through your browser settings. Most browsers let you block all cookies, block third-party cookies only, or clear cookies already stored. You can usually find these controls in your browser's “Settings” or “Privacy”        section."
+          },
+          {
+            "list": [
+              "Blocking essential cookies may stop you from signing in or using key parts of the Platform.",
+              "Blocking preference or translation cookies may reset your language and display choices on each visit.",
+              "Blocking analytics cookies will not affect your access but limits the data we can use to improve the Platform."
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Your consent",
+        "blocks": [
+          {
+            "p": "By continuing to use the Platform, you consent to our use of cookies as described in this policy, except for essential cookies which are necessary for the Platform to function. You can withdraw or change your consent at any time by adjusting your browser settings. Where required by law, we will ask for your consent before placing non-essential cookies."
+          }
+        ]
+      },
+      {
+        "title": "Changes & contact",
+        "blocks": [
+          {
+            "p": "We may update this Cookie Policy from time to time; the “Last updated” date above reflects the latest version. For any questions about our use of cookies, contact us at support@academiyafx.com or via our contact page."
+          }
+        ]
+      }
+    ]
+  }
+}

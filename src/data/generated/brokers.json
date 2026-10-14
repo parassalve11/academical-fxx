@@ -1,0 +1,107 @@
+[
+  {
+    "slug": "coindcx",
+    "name": "CoinDcx",
+    "category": "Crypto Exchanges",
+    "rating": 5,
+    "accountTypes": "Coins Wallet, Futures Wallet, Options Wallet, INR Wallet",
+    "minDeposit": "$200",
+    "spreadsFrom": "0",
+    "maxLeverage": "1:150x",
+    "regulators": [
+      "FIU REGISTERED ISO/IEC 27001:2022"
+    ],
+    "about": "Ease of Use: The platform offers a simplified \"CoinDCX\" app for beginners and an advanced trading dashboard for experienced users, making it highly accessible.Regulatory Compliance: It is one of the most locally compliant exchanges in India, enforcing strict KYC protocols and registering with the Financial Intelligence Unit (FIU).Wide Selection: Supports trading across hundreds of different cryptocurrencies with relatively high liquidity for major pairs.",
+    "pros": [
+      "Fast and seamless INR deposits using UPI and local bank transfers.",
+      "Strong security track record (including cold storage) and a commitment from the company to absorb losses from their corporate treasury in the event of unforeseen breaches."
+    ],
+    "cons": [
+      "Limited options for transferring or withdrawing your actual cryptocurrency to private, external hardware wallets."
+    ],
+    "url": "https://invite.coindcx.com/68754841",
+    "logo": "/images/brokers/coindcx.webp",
+    "summary": "Ease of Use: The platform offers a simplified \"CoinDCX\" app for beginners and an advanced trading dashboard for experienced users, making it highly accessible.Regulatory Compliance: It is one of the most locally compliant exchanges in India, enforcing strict KYC protocols and registering with the Financial Intelligence Unit (FIU).Wide Selection: Supports trading across hundreds of different cryptocurrencies with relatively high liquidity for major pairs.",
+    "featured": true
+  },
+  {
+    "slug": "shark-exchange",
+    "name": "Shark Exchange",
+    "category": "Crypto Exchanges",
+    "rating": 4.6,
+    "accountTypes": "INR Wallet, Futures Wallet",
+    "minDeposit": "$100",
+    "spreadsFrom": "0.016% Maker Fee",
+    "maxLeverage": "Up to 1:150X",
+    "regulators": [
+      "FIU-IND Registered VASP — REID: VA00045558",
+      "VASP — REID: VA00045558"
+    ],
+    "about": "Home to India's Crypto-Native Traders We believe in a crypto-powered India where innovation and compliance go hand in hand. Built for traders who demand speed, clarity, and a platform that keeps up.Vision Make crypto trading accessible, affordable, & rewarding for every trader. Lower fees, higher profits Tools for every trader Designed for sustainable trading success.Mission Become India's most trusted crypto trading platform. World-class trading for every Indian A community that grows together Setting the benchmark for crypto trading in India",
+    "pros": [
+      "Low minimum deposit",
+      "Great mobile app"
+    ],
+    "cons": [
+      "Wider spreads on standard"
+    ],
+    "url": "https://sharkexchange.in/referral?code=RVU230",
+    "logo": "/images/brokers/shark-exchange.jpg",
+    "summary": "Home to India's Crypto-Native Traders We believe in a crypto-powered India where innovation and compliance go hand in hand. Built for traders who demand speed, clarity, and a platform that keeps up.Vision Make crypto trading accessible, affordable, & rewarding for every trader. Lower fees, higher profits Tools for every trader Designed for sustainable trading success.Mission Become India's most trusted crypto trading platform. World-class trading for every Indian A community that grows together Setting the benchmark for crypto trading in India",
+    "featured": true
+  },
+  {
+    "slug": "coinswitch",
+    "name": "CoinSwitch",
+    "category": "Crypto Exchanges",
+    "rating": 4.4,
+    "accountTypes": "INR Wallet",
+    "minDeposit": "$100",
+    "spreadsFrom": "0.0 pips",
+    "maxLeverage": "Up to 1:150X",
+    "regulators": [
+      "FIU REGISTERED ISO/IEC 27001:2022"
+    ],
+    "about": "CoinSwitch is one of India's largest cryptocurrency platforms, with over 25 million registered users. Founded in 2017 and headquartered in Bangalore, it aggregates liquidity from multiple global exchanges to offer users the best real-time prices for trading over 400 cryptocurrencies in Indian Rupees (INR).CoinSwitch App (formerly CoinSwitch Kuber): A beginner-friendly mobile app designed for everyday investors. Users can start investing in cryptocurrencies like Bitcoin (BTC) and Ethereum (ETH) with as little as ₹100. It also features automated Crypto SIPs to help manage market volatility.CoinSwitch PRO: A web and mobile-based platform tailored for advanced and professional traders. It supports spot trading, futures, API trading, and allows multi-exchange trading from a single account.CoinSwitch Ventures: The investment arm of CoinSwitch, which backs early-stage Web3 and blockchain startups.Security & Backing: The platform is backed by major investors like Andreessen Horowitz (a16z), Tiger Global, and Sequoia Capital India. It mandates Know Your Customer (KYC) and Anti-Money Laundering (AML) verifications for all users and routinely publishes proof-of-reserves.",
+    "pros": [
+      "Simple Interface: Highly rated for its clean, beginner-friendly UI that simplifies buying and selling crypto with INR.",
+      "Low Entry Barrier: Allows users to start investing with very small amounts."
+    ],
+    "cons": [
+      "Limited Autonomy (Custodial)"
+    ],
+    "url": "https://coinswitch.co/pro/signup?code=nEzlASo",
+    "logo": "/images/brokers/coinswitch.png",
+    "summary": "CoinSwitch is one of India's largest cryptocurrency platforms, with over 25 million registered users. Founded in 2017 and headquartered in Bangalore, it aggregates liquidity from multiple global exchanges to offer users the best real-time prices for trading over 400 cryptocurrencies in Indian Rupees (INR).CoinSwitch App (formerly CoinSwitch Kuber): A beginner-friendly mobile app designed for everyday investors. Users can start investing in cryptocurrencies like Bitcoin (BTC) and Ethereum (ETH) with as little as ₹100. It also features automated Crypto SIPs to help manage market volatility.CoinSwitch PRO: A web and mobile-based platform tailored for advanced and professional traders. It supports spot trading, futures, API trading, and allows multi-exchange trading from a single account.CoinSwitch Ventures: The investment arm of CoinSwitch, which backs early-stage Web3 and blockchain startups.Security & Backing: The platform is backed by major investors like Andreessen Horowitz (a16z), Tiger Global, and Sequoia Capital India. It mandates Know Your Customer (KYC) and Anti-Money Laundering (AML) verifications for all users and routinely publishes proof-of-reserves.",
+    "featured": true
+  },
+  {
+    "slug": "vantage-markets",
+    "name": "Vantage Markets",
+    "category": "Forex Brokers",
+    "rating": 4.2,
+    "accountTypes": "Standard stp, Raw ECN, Pro ECN",
+    "minDeposit": "$100",
+    "spreadsFrom": "0.0 pips",
+    "maxLeverage": "Up to 1:2000",
+    "regulators": [
+      "FCA",
+      "ASIC",
+      "CySEC"
+    ],
+    "about": "A multi-regulated forex and CFD broker known for tight spreads, fast execution and a polished platform suite.Vantage Markets offers several live and demo trading accounts to suit different trading styles, experience levels, and capital requirements. The three primary live accounts include the Standard STP (commission-free), Raw ECN (lowest spreads), and Pro ECN (best for high-volume traders)",
+    "pros": [
+      "Tight raw spreads",
+      "Fast order execution",
+      "Strong regulation"
+    ],
+    "cons": [
+      "Inactivity fee",
+      "No fixed spreads"
+    ],
+    "url": "https://vigco.co/la-com-inv/Academiya",
+    "logo": "/images/brokers/vantage-markets.webp",
+    "summary": "A multi-regulated forex and CFD broker known for tight spreads, fast execution and a polished platform suite.Vantage Markets offers several live and demo trading accounts to suit different trading styles, experience levels, and capital requirements. The three primary live accounts include the Standard STP (commission-free), Raw ECN (lowest spreads), and Pro ECN (best for high-volume traders)",
+    "featured": false
+  }
+]
