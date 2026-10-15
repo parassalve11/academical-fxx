@@ -3,6 +3,13 @@ import { Activity, ArrowRight, TrendingDown, TrendingUp } from "lucide-react";
 import { Change } from "./Ticker";
 import { marketsBoard, topMovers } from "@/data/site";
 
+function IndexIcon({ icon, className = "size-9" }) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img src={`/images/markets/indices/${icon}.svg`} alt="" aria-hidden="true" className={`${className} shrink-0 rounded-full ring-1 ring-black/5`} />
+  );
+}
+
 export default function Markets() {
   return (
     <section aria-labelledby="markets-title" className="relative isolate overflow-hidden border-y border-line bg-white/40">
@@ -39,9 +46,12 @@ export default function Markets() {
                 key={m.symbol}
                 className={`flex items-center justify-between gap-4 px-6 py-4 ${i >= 1 ? "border-t border-line" : ""} ${i === 1 ? "sm:border-t-0" : ""} ${i % 2 === 1 ? "sm:border-l sm:border-line" : ""}`}
               >
-                <div>
-                  <p className="font-semibold text-green">{m.name}</p>
-                  <p className="text-xs text-faint">{m.symbol}</p>
+                <div className="flex min-w-0 items-center gap-3">
+                  <IndexIcon icon={m.icon} />
+                  <div className="min-w-0">
+                    <p className="font-semibold text-green">{m.name}</p>
+                    <p className="text-xs text-faint">{m.symbol}</p>
+                  </div>
                 </div>
                 <div className="text-right">
                   <p className="tabular font-semibold text-green">{m.value}</p>
@@ -56,7 +66,9 @@ export default function Markets() {
               <p className="inline-flex items-center gap-1.5 text-sm text-up">
                 <TrendingUp className="size-4" aria-hidden="true" /> Top gainer
               </p>
-              <p className="mt-1.5 font-semibold text-green">{topMovers.gainer.name}</p>
+              <p className="mt-2 flex items-center gap-2.5 font-semibold text-green">
+                <IndexIcon icon={topMovers.gainer.icon} className="size-7" /> {topMovers.gainer.name}
+              </p>
               <p className="tabular text-sm text-up">
                 {topMovers.gainer.points} <span className="text-up/70">(+{topMovers.gainer.change.toFixed(2)}%)</span>
               </p>
@@ -65,7 +77,9 @@ export default function Markets() {
               <p className="inline-flex items-center gap-1.5 text-sm text-down">
                 <TrendingDown className="size-4" aria-hidden="true" /> Top loser
               </p>
-              <p className="mt-1.5 font-semibold text-green">{topMovers.loser.name}</p>
+              <p className="mt-2 flex items-center gap-2.5 font-semibold text-green">
+                <IndexIcon icon={topMovers.loser.icon} className="size-7" /> {topMovers.loser.name}
+              </p>
               <p className="tabular text-sm text-down">
                 {topMovers.loser.points} <span className="text-down/70">({topMovers.loser.change.toFixed(2)}%)</span>
               </p>

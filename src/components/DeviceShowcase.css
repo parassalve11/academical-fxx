@@ -1,0 +1,90 @@
+/* Device showcase: live HTML sits under the transparent screens of the
+   device artwork. Sizes use --u (1px when the stage is 1000px wide), so the
+   screen content scales exactly with the image at every width. */
+.spot-devices { position: relative; z-index: 1; max-width: 1040px; margin-inline: auto; }
+.spot-devices-stage { position: relative; container-type: inline-size; }
+.spot-devices-stage > * { --u: 0.1cqw; }
+.spot-devices-frame {
+  position: relative;
+  z-index: 3;
+  display: block;
+  width: 100%;
+  height: auto;
+  pointer-events: none;
+  filter: drop-shadow(0 30px 40px rgb(0 0 0 / 0.35));
+}
+.spot-screen { position: absolute; z-index: 1; overflow: hidden; font-size: calc(var(--u) * 7); line-height: 1.35; }
+.spot-laptop { left: 13.4%; top: 25.6%; width: 47.2%; height: 52.4%; background: #fafbf8; color: var(--color-green); }
+/* The laptop overlaps the tablet's left edge, so its content starts inset. */
+.spot-tablet { left: 58.8%; top: 17%; width: 25%; height: 63.3%; padding-left: 3.2%; border-radius: calc(var(--u) * 6); background: #111716; color: white; }
+.spot-phone {
+  z-index: 2;
+  left: 78.3%;
+  top: 47.5%;
+  width: 10.7%;
+  height: 38.3%;
+  padding: calc(var(--u) * 12) calc(var(--u) * 5) calc(var(--u) * 5);
+  border-radius: calc(var(--u) * 12);
+  background: #fafbf8;
+  color: var(--color-green);
+}
+
+/* Laptop: the course page on the website. */
+.spot-web-nav { display: flex; align-items: center; gap: calc(var(--u) * 14); height: calc(var(--u) * 30); padding: 0 calc(var(--u) * 16); border-bottom: 1px solid #e6ebe6; background: white; }
+.spot-web-logo { width: calc(var(--u) * 52); height: auto; }
+.spot-web-links { display: flex; gap: calc(var(--u) * 12); margin-left: auto; color: #5b6b62; }
+.spot-web-cta { padding: calc(var(--u) * 4) calc(var(--u) * 10); border-radius: 99px; background: var(--color-green); color: white; font-weight: 600; }
+.spot-web-body { display: grid; grid-template-columns: 1.1fr 1fr; gap: calc(var(--u) * 18); align-items: center; padding: calc(var(--u) * 18) calc(var(--u) * 20) calc(var(--u) * 14); }
+.spot-web-poster { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-radius: calc(var(--u) * 8); box-shadow: 0 calc(var(--u) * 10) calc(var(--u) * 20) calc(var(--u) * -10) rgb(15 60 57 / 0.5); }
+.spot-web-features { display: grid; grid-template-columns: repeat(4, 1fr); gap: calc(var(--u) * 8); padding: 0 calc(var(--u) * 20); }
+.spot-web-features li { padding: calc(var(--u) * 8); border-radius: calc(var(--u) * 6); background: white; box-shadow: inset 0 0 0 1px #e6ebe6; }
+.spot-web-features svg { width: calc(var(--u) * 10); height: calc(var(--u) * 10); color: var(--color-green); }
+.spot-web-features b { display: block; margin-top: calc(var(--u) * 4); font-size: calc(var(--u) * 7); }
+.spot-web-features span { color: #69776c; font-size: calc(var(--u) * 5.5); }
+.spot-web-eyebrow { color: #65796a; font-size: calc(var(--u) * 6); font-weight: 600; letter-spacing: 0.14em; }
+.spot-web-title { margin-top: calc(var(--u) * 5); font-size: calc(var(--u) * 19); font-weight: 700; line-height: 1.05; letter-spacing: -0.03em; }
+.spot-web-rating { display: flex; align-items: center; gap: calc(var(--u) * 3); margin-top: calc(var(--u) * 8); color: #5b6b62; }
+.spot-web-rating svg { width: calc(var(--u) * 8); height: calc(var(--u) * 8); fill: var(--color-gold); color: var(--color-gold); }
+.spot-web-facts { margin-top: calc(var(--u) * 4); color: #5b6b62; }
+.spot-web-price { margin-top: calc(var(--u) * 10); color: #69776c; }
+.spot-web-price strong { color: var(--color-green); font-size: calc(var(--u) * 20); letter-spacing: -0.03em; }
+.spot-web-button { display: inline-block; margin-top: calc(var(--u) * 10); padding: calc(var(--u) * 6) calc(var(--u) * 16); border-radius: calc(var(--u) * 6); background: var(--color-green); color: white; font-weight: 600; }
+
+/* Tablet: a live class. */
+.spot-live-bar { display: flex; align-items: center; gap: calc(var(--u) * 4); padding: calc(var(--u) * 8) calc(var(--u) * 10); color: rgb(255 255 255 / 0.75); font-size: calc(var(--u) * 6.5); }
+.spot-live-dot { width: calc(var(--u) * 5); height: calc(var(--u) * 5); border-radius: 50%; background: #ef5350; box-shadow: 0 0 calc(var(--u) * 6) #ef5350; }
+.spot-live-time { margin-left: auto; font-variant-numeric: tabular-nums; }
+.spot-live-chart { position: relative; height: 42%; margin: 0 calc(var(--u) * 8); overflow: hidden; border-radius: calc(var(--u) * 5); }
+.spot-live-cam { position: absolute; left: calc(var(--u) * 6); top: calc(var(--u) * 6); width: 30%; aspect-ratio: 4 / 3; overflow: hidden; border-radius: calc(var(--u) * 4); background: #1d4a46; box-shadow: 0 0 0 calc(var(--u) * 1.5) #26a69a; }
+.spot-live-cam span { position: absolute; left: calc(var(--u) * 3); bottom: calc(var(--u) * 2); font-size: calc(var(--u) * 5.5); font-weight: 600; }
+/* The phone covers the tablet's lower-right corner, so the chat stays left. */
+.spot-live-chat { display: grid; gap: calc(var(--u) * 6); width: 68%; padding: calc(var(--u) * 10); }
+.spot-live-chat li { padding: calc(var(--u) * 5) calc(var(--u) * 7); border-radius: calc(var(--u) * 6); background: rgb(255 255 255 / 0.07); color: rgb(255 255 255 / 0.85); font-size: calc(var(--u) * 6.5); }
+.spot-live-chat b { display: block; color: #b6dace; font-size: calc(var(--u) * 5.5); }
+
+/* Phone: lesson progress in the classroom. */
+.spot-app-poster { position: relative; aspect-ratio: 16 / 10; overflow: hidden; border-radius: calc(var(--u) * 4); }
+.spot-app-title { margin-top: calc(var(--u) * 5); font-size: calc(var(--u) * 8); font-weight: 700; line-height: 1.1; }
+.spot-app-progress { height: calc(var(--u) * 2.5); margin-top: calc(var(--u) * 5); overflow: hidden; border-radius: 99px; background: #dfeae6; }
+.spot-app-progress span { display: block; width: 64%; height: 100%; background: var(--color-up); }
+.spot-app-meta { margin-top: calc(var(--u) * 3); color: #69776c; font-size: calc(var(--u) * 5); }
+.spot-app-lessons { display: grid; gap: calc(var(--u) * 3); margin-top: calc(var(--u) * 6); }
+.spot-app-lessons li { display: flex; align-items: center; gap: calc(var(--u) * 3); padding: calc(var(--u) * 3.5) calc(var(--u) * 4); border-radius: calc(var(--u) * 3); background: white; box-shadow: inset 0 0 0 1px #e6ebe6; font-size: calc(var(--u) * 5); }
+.spot-app-lessons svg { width: calc(var(--u) * 7); height: calc(var(--u) * 7); flex-shrink: 0; color: #a3b0aa; }
+.spot-app-lessons li[data-active] svg { color: var(--color-up); }
+.spot-app-button { display: block; margin-top: calc(var(--u) * 7); padding: calc(var(--u) * 4); border-radius: 99px; background: var(--color-green); color: white; font-size: calc(var(--u) * 5.5); font-weight: 600; text-align: center; }
+
+.spot-devices-caption { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center; gap: 8px 14px; margin-top: 28px; color: #c5d6d0; font-size: 13px; }
+.spot-devices-caption strong { color: white; font-size: 34px; letter-spacing: -0.04em; }
+.spot-devices-caption s { color: #8fb0a5; }
+.spot-devices-link { align-self: center; margin-left: 6px; padding: 11px 20px; border-radius: 999px; background: #faf9f7; color: var(--color-green); font-weight: 600; transition: background 160ms ease; }
+.spot-devices-link:hover { background: var(--color-green-100); }
+.spot-devices-link:focus-visible { outline-color: #c9b6f0; }
+
+/* The artwork has ~8% empty margin each side; on phones let it bleed so the
+   devices themselves use the full width. */
+@media (max-width: 760px) {
+  .spot-devices-stage { width: 118%; margin-left: -9%; }
+  .spot-devices-caption { margin-top: 18px; }
+  .spot-devices-caption strong { font-size: 28px; }
+}

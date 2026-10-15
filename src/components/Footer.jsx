@@ -1,4 +1,4 @@
-import Image from "next/image";
+import TradingChart from "./TradingChart";
 import Link from "next/link";
 import { Logo, SocialIcon } from "./Brand";
 import { footerColumns, socials } from "@/data/site";
@@ -7,8 +7,10 @@ export function JoinCta() {
   return (
     <section aria-labelledby="join-title" className="mx-auto max-w-[1240px] px-4 sm:px-6">
       <div className="relative isolate overflow-hidden rounded-[40px] px-6 py-20 text-center sm:px-12 sm:py-28">
-        <Image src="/images/stock/community-table.jpg" alt="" fill sizes="(min-width: 1240px) 1240px, 100vw" className="-z-20 object-cover" />
-        <div className="absolute inset-0 -z-10 bg-[linear-gradient(180deg,rgb(15_60_57/0.9),rgb(15_60_57/0.82))]" />
+        <div className="absolute inset-0 -z-20 bg-[radial-gradient(90%_80%_at_50%_0%,#1d5a53,#0f3c39_70%)]" aria-hidden="true" />
+        <div className="absolute inset-x-0 bottom-0 -z-10 h-2/3 opacity-30 [mask-image:linear-gradient(to_top,black,transparent)]" aria-hidden="true">
+          <TradingChart className="size-full" width={1200} height={360} scale={false} seed={17} count={90} />
+        </div>
         <p className="font-script text-3xl font-bold text-lilac sm:text-4xl">Learn to Lead.</p>
         <h2 id="join-title" className="mx-auto mt-3 max-w-3xl font-display text-[clamp(2.25rem,5.5vw,4.25rem)] font-extrabold leading-[0.98] tracking-[-0.04em] text-white text-balance">
           Join a community that learns to lead.

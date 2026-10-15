@@ -1,8 +1,8 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import { Container, PageHero } from "@/components/ui";
 import { JoinCta } from "@/components/Footer";
+import { CourseScreen, Laptop, LiveClassScreen, Phone } from "@/components/Devices";
 import { about } from "@/data/content";
 
 export const metadata = {
@@ -44,8 +44,13 @@ export default function AboutPage() {
 
         <div className="mt-20 grid items-center gap-12 lg:grid-cols-12">
           <div className="relative lg:col-span-5">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[36px]">
-              <Image src="/images/stock/community-table.jpg" alt="A group of learners working on laptops around a shared table" fill sizes="(min-width: 1024px) 480px, 100vw" className="object-cover" />
+            <div className="relative overflow-hidden rounded-[36px] bg-[radial-gradient(120%_90%_at_20%_0%,#dfeae6,#eef4f1_60%,#f3eefc)] px-6 pb-44 pt-12 ring-1 ring-line" aria-hidden="true">
+              <Laptop className="mr-[16%]">
+                <LiveClassScreen />
+              </Laptop>
+              <Phone className="absolute bottom-36 right-6 w-[27%]">
+                <CourseScreen />
+              </Phone>
             </div>
             <p className="glass absolute inset-x-4 bottom-4 rounded-3xl p-5 text-[0.9375rem] leading-relaxed text-ink sm:inset-x-6 sm:bottom-6">
               One hub for courses, live markets, news and the economic calendar — so every lesson connects to the real world.

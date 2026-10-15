@@ -404,30 +404,71 @@ body {
 .mentor-hero-caption p:first-child { font-size: 23px; font-weight: 600; line-height: 1.25; }
 .mentor-hero-caption p:last-child { margin-top: 5px; color: #c5d6d0; font-size: 8px; letter-spacing: 0.14em; }
 
-/* A true open semicircle: symbols remain upright and fade at the endpoints. */
-.market-orbit { position: absolute; inset: 0; }
-.market-orbit-canvas { position: absolute; inset: 0; width: 100%; height: 100%; overflow: visible; }
-.market-orbit-track { stroke: rgb(216 240 226 / 0.25); stroke-width: 1; }
-.market-orbit-track-secondary { stroke: rgb(216 240 226 / 0.07); stroke-width: 1; }
-.market-orbit-symbol {
-  offset-path: path("M 350 62 A 260 260 0 0 0 350 582");
-  offset-rotate: 0deg;
-  offset-anchor: 0px 0px;
-  animation: market-semicircle 30s linear infinite;
-}
-.market-orbit-ticker { fill: #d3e4dd; font-family: var(--font-sans); font-size: 10px; font-weight: 500; letter-spacing: 0.7px; }
-@keyframes market-semicircle {
-  0% { offset-distance: 0%; opacity: 0; }
-  5% { opacity: 1; }
-  95% { opacity: 1; }
-  100% { offset-distance: 100%; opacity: 0; }
-}
-.market-orbit[data-paused="true"] .market-orbit-symbol { animation-play-state: paused; }
-.market-orbit-controls {
+/* Hero market scene: a TradingView-style chart panel behind the mentor and a
+   symbol roller beneath it. Both stay left of his body, so nothing crosses him. */
+.hero-markets {
   position: absolute;
-  z-index: 4;
-  left: 40px;
-  bottom: 22px;
+  left: -64px;
+  top: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: calc(84% + 64px);
+}
+.hero-chart {
+  overflow: hidden;
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: 18px;
+  background: #0f1514;
+  box-shadow: 0 40px 80px -30px rgb(0 0 0 / 0.6);
+}
+.hero-chart-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 11px 14px;
+  border-bottom: 1px solid rgb(255 255 255 / 0.06);
+  color: #d1d4dc;
+  font-size: 12px;
+}
+.hero-chart-symbol { font-weight: 600; letter-spacing: 0.02em; }
+.hero-chart-meta { color: #8c9a97; font-size: 11px; }
+.hero-chart-tf { display: flex; gap: 2px; margin-left: auto; color: #8c9a97; font-size: 11px; }
+.hero-chart-tf span { padding: 3px 7px; border-radius: 5px; }
+.hero-chart-tf span[data-active] { background: rgb(255 255 255 / 0.08); color: white; }
+.hero-chart-plot { display: block; width: 100%; height: auto; aspect-ratio: 560 / 300; }
+
+.hero-chip-pair { position: relative; display: inline-block; flex-shrink: 0; width: 26px; height: 22px; }
+.hero-chip-pair img { position: absolute; width: 17px; height: 17px; border-radius: 50%; }
+.hero-chip-pair img:first-child { left: 0; top: 0; }
+.hero-chip-pair img:last-child { right: 0; bottom: 0; box-shadow: 0 0 0 2px #0f1514; }
+
+.hero-roller {
+  width: 82%;
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, black 10%, black 85%, transparent);
+}
+.hero-roller-track { display: flex; width: max-content; animation: tape 32s linear infinite; }
+.hero-markets[data-paused="true"] .hero-roller-track { animation-play-state: paused; }
+.hero-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
+  padding: 8px 14px 8px 8px;
+  border: 1px solid rgb(255 255 255 / 0.12);
+  border-radius: 999px;
+  background: rgb(255 255 255 / 0.06);
+  white-space: nowrap;
+}
+.hero-chip .hero-chip-pair { width: 34px; height: 30px; }
+.hero-chip .hero-chip-pair img { width: 23px; height: 23px; }
+.hero-chip .hero-chip-pair img:last-child { box-shadow: 0 0 0 2px var(--color-green); }
+.hero-chip-icon { width: 30px; height: 30px; border-radius: 50%; }
+.hero-chip-ticker { display: block; color: white; font-size: 12px; font-weight: 600; letter-spacing: 0.03em; }
+.hero-chip-name { display: block; color: #a9c0b9; font-size: 10px; }
+
+.hero-roller-controls {
   display: flex;
   align-items: center;
   gap: 8px;
@@ -435,7 +476,7 @@ body {
   font-size: 9px;
   letter-spacing: 0.16em;
 }
-.market-orbit-toggle {
+.hero-roller-toggle {
   display: grid;
   place-items: center;
   width: 32px;
@@ -446,7 +487,7 @@ body {
   color: white;
   transition: background 0.2s;
 }
-.market-orbit-toggle:hover { background: rgb(255 255 255 / 0.12); }
+.hero-roller-toggle:hover { background: rgb(255 255 255 / 0.12); }
 
 /* Keep the transparent navigation legible before it becomes frosted. */
 .header-on-dark .text-muted, .header-on-dark .text-green { color: rgb(255 255 255 / 0.85); }
@@ -475,7 +516,7 @@ body {
   .mentor-hero-visual { width: min(100%, 550px); height: 600px; margin: 90px auto 0; }
   .mentor-hero-image { right: -10px; width: 440px; height: 660px; }
   .mentor-hero-caption { right: 30px; bottom: 50px; }
-  .market-orbit-controls { bottom: 18px; }
+  .hero-markets { left: 0; top: 40px; width: 72%; }
 }
 
 @media (max-width: 639px) {
@@ -496,11 +537,122 @@ body {
   .mentor-hero-caption p:first-child { font-size: 18px; }
   .mentor-hero-caption p:last-child { font-size: 6.5px; }
   .mentor-caption-line { height: 30px; }
-  .market-orbit-controls { left: 6px; bottom: 10px; font-size: 8px; }
-  .market-orbit-toggle { width: 44px; height: 44px; }
+  .hero-markets { top: 2%; width: 64%; gap: 10px; }
+  .hero-chart { border-radius: 12px; }
+  .hero-chart-bar { gap: 6px; padding: 7px 9px; font-size: 10px; }
+  .hero-chart-meta, .hero-chart-tf { display: none; }
+  .hero-roller { width: 76%; }
+  .hero-chip { gap: 7px; margin-right: 7px; padding: 5px 10px 5px 5px; }
+  .hero-chip-icon { width: 22px; height: 22px; }
+  .hero-chip .hero-chip-pair { width: 28px; height: 22px; }
+  .hero-chip .hero-chip-pair img { width: 18px; height: 18px; }
+  .hero-chip-ticker { font-size: 10px; }
+  .hero-chip-name { display: none; }
+  .hero-roller-controls { font-size: 8px; }
+  .hero-roller-toggle { width: 44px; height: 44px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .market-orbit-symbol { animation: none !important; opacity: 1; }
-  .market-orbit-toggle { display: none; }
+  .hero-roller { overflow-x: auto; }
+  .hero-roller-track { animation: none !important; }
+  .hero-roller-controls { display: none; }
+}
+
+@layer components {
+/* Device mockups (laptop + phone) used instead of stock office photography. */
+.device-screen { position: relative; overflow: hidden; height: 100%; }
+.device-laptop { position: relative; width: 100%; }
+.device-laptop-lid {
+  position: relative;
+  aspect-ratio: 16 / 10.4;
+  padding: 2.6% 2.6% 3%;
+  border-radius: 18px 18px 6px 6px;
+  background: linear-gradient(180deg, #2b3130, #161a19);
+  box-shadow: inset 0 0 0 1px rgb(255 255 255 / 0.08), 0 40px 70px -35px rgb(15 60 57 / 0.55);
+}
+.device-laptop-lid .device-screen { border-radius: 6px; background: #111716; }
+.device-laptop-cam {
+  position: absolute;
+  top: 1.1%;
+  left: 50%;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #3a4442;
+  transform: translateX(-50%);
+}
+.device-laptop-base {
+  position: relative;
+  left: -7%;
+  width: 114%;
+  height: 14px;
+  border-radius: 0 0 16px 16px;
+  background: linear-gradient(180deg, #d9dcdb, #a9aeac 70%, #8c918f);
+}
+.device-laptop-base::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 16%;
+  height: 5px;
+  border-radius: 0 0 8px 8px;
+  background: #b9bdbc;
+  transform: translateX(-50%);
+}
+.device-phone {
+  position: relative;
+  aspect-ratio: 9 / 19;
+  padding: 7px;
+  border-radius: 30px;
+  background: #161a19;
+  box-shadow: inset 0 0 0 1.5px #3a4442, 0 30px 60px -20px rgb(15 60 57 / 0.55);
+}
+.device-phone .device-screen { border-radius: 23px; }
+.device-phone-island {
+  position: absolute;
+  z-index: 2;
+  top: 13px;
+  left: 50%;
+  width: 30%;
+  height: 12px;
+  border-radius: 999px;
+  background: #0a0c0c;
+  transform: translateX(-50%);
+}
+.device-phone .device-screen > :first-child { padding-top: 22px; }
+}
+
+/* Courses: a continuously scrolling strip of course cards. */
+.course-marquee {
+  overflow: hidden;
+  padding-block: 12px 28px;
+  mask-image: linear-gradient(90deg, transparent, black 6%, black 94%, transparent);
+}
+.course-marquee-track {
+  display: flex;
+  width: max-content;
+  animation: tape 48s linear infinite;
+}
+.course-marquee:hover .course-marquee-track,
+.course-marquee:focus-within .course-marquee-track { animation-play-state: paused; }
+.course-slide { width: min(400px, 82vw); margin-right: 20px; flex-shrink: 0; }
+@media (prefers-reduced-motion: reduce) {
+  .course-marquee { overflow-x: auto; mask-image: none; }
+  .course-marquee-track { animation: none; }
+  .course-marquee-track > [aria-hidden="true"] { display: none; }
+}
+
+/* Contact: YouTube comments drift upward in a loop; hover or focus pauses. */
+@keyframes comment-feed { to { transform: translateY(-50%); } }
+.comment-feed { mask-image: linear-gradient(transparent, black 10%, black 88%, transparent); }
+.comment-feed-track { animation: comment-feed 36s linear infinite; }
+.comment-feed:hover .comment-feed-track,
+.comment-feed:focus-visible .comment-feed-track { animation-play-state: paused; }
+.comment-feed-track > li:last-child { border-bottom-width: 1px; }
+@media (prefers-reduced-motion: reduce) {
+  .comment-feed { overflow-y: auto; mask-image: none; }
+  .comment-feed-track { position: static; padding-inline: 20px; }
+  .comment-feed-track { animation: none; }
+  .comment-feed-track > [aria-hidden="true"] { display: none; }
 }

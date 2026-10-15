@@ -1,0 +1,208 @@
+.course-spotlight-section {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--color-green);
+  color: white;
+}
+
+.course-spotlight-section::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 12% -20% 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 55%, rgb(119 184 155 / 0.25), transparent 58%);
+}
+
+.course-spotlight-inner {
+  max-width: 1200px;
+  margin-inline: auto;
+  padding: 96px 32px 64px;
+}
+
+.course-spotlight-heading { position: relative; z-index: 1; text-align: center; }
+.course-spotlight-eyebrow {
+  margin-bottom: 22px;
+  color: #b6dace;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+}
+
+.course-spotlight-title {
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700;
+  line-height: 1.08;
+  letter-spacing: -0.045em;
+}
+
+.course-spotlight-title span { color: #b6dace; }
+.course-spotlight-intro {
+  margin-top: 24px;
+  color: #c5d6d0;
+  font-size: 16px;
+  line-height: 1.75;
+  text-wrap: pretty;
+}
+
+.course-spotlight-scene {
+  position: relative;
+  max-width: 1040px;
+  margin: 64px auto 0;
+}
+
+.course-spotlight-scene::before,
+.course-spotlight-scene::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  width: 880px;
+  height: 550px;
+  border: 1px solid rgb(182 218 206 / 0.1);
+  border-radius: 50%;
+  transform: translate(-50%, -50%) rotate(-24deg);
+  pointer-events: none;
+}
+.course-spotlight-scene::after { width: 1070px; height: 690px; }
+
+.course-spotlight-benefits {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+  margin-top: 56px;
+}
+.course-spotlight-benefit {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 172px;
+  padding: 25px;
+  border: 1px solid rgb(255 255 255 / 0.65);
+  border-radius: 19px;
+  color: var(--color-green);
+  box-shadow: 0 18px 40px -15px rgb(0 0 0 / 0.3);
+}
+.course-spotlight-benefit { transition: transform 300ms var(--ease-out-soft); }
+.course-spotlight-benefit:nth-child(odd) { transform: rotate(-1.2deg); }
+.course-spotlight-benefit:nth-child(even) { transform: rotate(1.2deg); }
+.course-spotlight-benefit:hover { transform: rotate(0) translateY(-4px); }
+.course-spotlight-mint { background: #dce9da; }
+.course-spotlight-cream { background: #f4eedf; }
+.course-spotlight-paper { background: #fafbf8; }
+.course-spotlight-benefitLabel { color: #566a5c; font-size: 10px; font-weight: 500; letter-spacing: 0.015em; }
+.course-spotlight-benefitTitle { margin-top: 9px; font-size: 30px; font-weight: 600; line-height: 1.06; letter-spacing: -0.04em; }
+.course-spotlight-benefitDescription { max-width: 260px; margin-top: 10px; color: #566a5c; font-size: 12px; line-height: 1.65; }
+
+.course-spotlight-footer { position: relative; z-index: 2; display: flex; flex-direction: column; align-items: center; gap: 16px; margin-top: 49px; text-align: center; }
+.course-spotlight-footer p { color: #c5d6d0; font-size: 13px; }
+.course-spotlight-browseLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 13px 28px;
+  border: 1px solid rgb(182 218 206 / 0.5);
+  border-radius: 999px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  transition: background 160ms ease;
+}
+.course-spotlight-browseLink:hover { background: rgb(255 255 255 / 0.1); }
+.course-spotlight-section :focus-visible { outline-color: #c9b6f0; }
+
+@media (min-width: 761px) and (max-width: 1050px) {
+  .course-spotlight-inner { padding-inline: 24px; }
+}
+
+/* Keep the poster and every benefit readable on smaller screens. */
+@media (max-width: 760px) {
+  .course-spotlight-inner { padding: 64px 24px 48px; }
+  .course-spotlight-eyebrow { margin-bottom: 19px; font-size: 9px; letter-spacing: 0.17em; }
+  .course-spotlight-title { font-size: clamp(36px, 7.8vw, 52px); }
+  .course-spotlight-intro { max-width: 430px; margin: 20px auto 0; font-size: 14px; }
+  .course-spotlight-desktopBreak { display: none; }
+  .course-spotlight-scene { margin-top: 38px; }
+  .course-spotlight-benefits { grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 36px; }
+  .course-spotlight-benefit, .course-spotlight-benefit:nth-child(n) { min-width: 0; min-height: 160px; padding: 20px 16px; border-radius: 14px; transform: none; box-shadow: 0 12px 24px -18px rgb(0 0 0 / 0.3); }
+  .course-spotlight-benefitTitle { font-size: 26px; }
+  .course-spotlight-benefitLabel { font-size: 9px; line-height: 1.5; }
+  .course-spotlight-benefitDescription { font-size: 11px; line-height: 1.65; }
+  .course-spotlight-footer { margin-top: 32px; }
+}
+
+@media (max-width: 380px) {
+  .course-spotlight-inner { padding-inline: 16px; }
+  .course-spotlight-benefits { gap: 10px; }
+  .course-spotlight-benefit { padding: 18px 13px; }
+  .course-spotlight-benefitTitle { font-size: 24px; }
+}
+
+/* Benefit cards sit behind the devices and peek out around them. Desktop
+   positions use cqw of the scene so the composition scales as one piece. */
+@media (min-width: 761px) and (max-width: 1099px) {
+  .course-spotlight-scene { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 16px; max-width: none; }
+  .course-spotlight-benefits { display: contents; }
+  .course-spotlight-scene .spot-devices { position: relative; z-index: 1; grid-column: 1 / -1; grid-row: 2; width: 100%; margin-block: -36px 16px; }
+  .course-spotlight-scene .spot-devices-stage { width: 112%; margin-left: -6%; }
+  .course-spotlight-benefit { min-height: 0; padding: 22px 18px 40px; }
+  .course-spotlight-benefitTitle { font-size: 24px; }
+  .course-spotlight-card1, .course-spotlight-card3, .course-spotlight-card5 { grid-row: 1; }
+  .course-spotlight-card2, .course-spotlight-card4, .course-spotlight-card6 { grid-row: 3; }
+}
+
+@media (min-width: 1100px) {
+  .course-spotlight-scene {
+    container-type: inline-size;
+    width: min(1400px, 100vw - 48px);
+    max-width: none;
+    margin-inline: auto;
+    margin-left: 50%;
+    padding-block: 7cqw 2cqw;
+    transform: translateX(-50%);
+  }
+  .course-spotlight-scene .spot-devices { position: relative; z-index: 1; width: 72%; max-width: none; }
+  /* The price line clears the lower cards. */
+  .course-spotlight-scene .spot-devices-caption { margin-top: 13cqw; }
+  .course-spotlight-benefits { position: absolute; inset: 0; display: block; margin: 0; }
+  .course-spotlight-benefit {
+    position: absolute;
+    width: 25cqw;
+    min-height: 0;
+    padding: 1.8cqw 1.9cqw;
+    transform: translateX(var(--tx, 0)) rotate(var(--rot, 0deg));
+  }
+  .course-spotlight-benefitTitle { font-size: clamp(24px, 2.2cqw, 32px); }
+  .course-spotlight-benefitDescription { max-width: 17cqw; }
+  /* Left cards tuck under the laptop; right cards under the tablet and phone.
+     Text stays on the exposed side. */
+  .course-spotlight-card1 { --rot: -5deg; left: 2cqw; top: 5cqw; }
+  .course-spotlight-card3 { --rot: -2deg; left: 3.5cqw; top: 22.5cqw; }
+  .course-spotlight-card5 { --rot: 3deg; left: 1.5cqw; top: 40cqw; padding-top: 4cqw; }
+  .course-spotlight-card2 { --rot: 5deg; right: 3cqw; top: 4cqw; padding-left: 3.5cqw; }
+  .course-spotlight-card4 { --rot: 2deg; right: 0; top: 22cqw; padding-left: 5.5cqw; }
+  .course-spotlight-card6 { --rot: -3deg; right: 1.5cqw; top: 40cqw; padding-top: 4cqw; padding-left: 3.5cqw; }
+  .course-spotlight-benefit:nth-child(odd), .course-spotlight-benefit:nth-child(even) { transform: translateX(var(--tx, 0)) rotate(var(--rot)); }
+  .course-spotlight-benefit:nth-child(n):hover { --tx: 0px; transform: translateX(var(--tx)) rotate(var(--rot)) translateY(-6px); }
+  .course-spotlight-card1, .course-spotlight-card3, .course-spotlight-card5 { --from: 14cqw; }
+  .course-spotlight-card2, .course-spotlight-card4, .course-spotlight-card6 { --from: -14cqw; }
+
+  /* Cards slide out from behind the devices as the section scrolls in. */
+  @supports (animation-timeline: view()) {
+    @media (prefers-reduced-motion: no-preference) {
+      .course-spotlight-benefit {
+        animation: spotlight-card-out linear both;
+        animation-timeline: view();
+        animation-range: entry 0% cover 32%;
+      }
+      @keyframes spotlight-card-out {
+        from { opacity: 0; transform: translateX(var(--from)) rotate(0deg) scale(0.92); }
+        to { opacity: 1; transform: translateX(0) rotate(var(--rot)) scale(1); }
+      }
+    }
+  }
+}

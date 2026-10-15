@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Check } from "lucide-react";
-import MarketOrbit from "./MarketOrbit";
+import HeroMarkets from "./HeroMarkets";
 
 export default function Hero() {
   return (
@@ -41,7 +41,7 @@ export default function Hero() {
 
         <div className="mentor-hero-visual">
           <div className="mentor-hero-halo" aria-hidden="true" />
-          <MarketOrbit />
+          <HeroMarkets />
           <figure className="mentor-hero-portrait">
             <Image
               src="/images/hero/mentor-cream-knit-v1.webp"

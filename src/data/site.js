@@ -23,18 +23,19 @@ export const ticker = [
   { name: "Nikkei 225", value: "68,089.78", change: 0.46 },
 ];
 
+// Icons: official TradingView index artwork in /images/markets/indices.
 export const marketsBoard = [
-  { name: "Dow Jones", symbol: "^DJI", value: "51,670.10", change: -0.35 },
-  { name: "Nasdaq Composite", symbol: "^IXIC", value: "27,204.38", change: -0.15 },
-  { name: "Russell 2000", symbol: "^RUT", value: "2,783.37", change: -0.4 },
-  { name: "S&P 500", symbol: "^GSPC", value: "7,805.37", change: -0.02 },
-  { name: "Euro STOXX 50", symbol: "^STOXX50E", value: "6,184.90", change: 0.01 },
-  { name: "FTSE 100 (UK)", symbol: "^FTSE", value: "10,650.33", change: -0.06 },
+  { name: "Dow Jones", symbol: "^DJI", icon: "dow-30", value: "51,670.10", change: -0.35 },
+  { name: "Nasdaq Composite", symbol: "^IXIC", icon: "nasdaq-composite", value: "27,204.38", change: -0.15 },
+  { name: "Russell 2000", symbol: "^RUT", icon: "russell-2000", value: "2,783.37", change: -0.4 },
+  { name: "S&P 500", symbol: "^GSPC", icon: "s-and-p-500", value: "7,805.37", change: -0.02 },
+  { name: "Euro STOXX 50", symbol: "^STOXX50E", icon: "euro-stoxx-50", value: "6,184.90", change: 0.01 },
+  { name: "FTSE 100 (UK)", symbol: "^FTSE", icon: "uk-100", value: "10,650.33", change: -0.06 },
 ];
 
 export const topMovers = {
-  gainer: { name: "Nikkei 225 (JP)", points: "+312.26", change: 0.46 },
-  loser: { name: "Russell 2000", points: "-11.11", change: -0.4 },
+  gainer: { name: "Nikkei 225 (JP)", icon: "nikkei-225", points: "+312.26", change: 0.46 },
+  loser: { name: "Russell 2000", icon: "russell-2000", points: "-11.11", change: -0.4 },
 };
 
 export const highlights = [
@@ -180,4 +181,65 @@ export const footerColumns = [
       { label: "Cookie Policy", href: "/cookies" },
     ],
   },
+];
+
+// Figures come from the course catalogue (enrolments, lessons, rating).
+export const proofStats = [
+  { value: "35+", label: "Traders enrolled across our flagship programmes" },
+  { value: "61", label: "Video lessons, from first candle to risk management" },
+  { value: "24/7", label: "VIP group support between live classes" },
+];
+
+// TODO(content): placeholder quotes for layout — replace with real, consented
+// student reviews before launch.
+export const testimonials = [
+  {
+    quote: "I'd watched hundreds of YouTube videos and still froze on every trade. The live Zoom sessions fixed that — Saurya marked up my own charts and showed me where my entries were wrong.",
+    name: "Rohit K.",
+    role: "Forex student, Pune",
+    course: "Master Institutional Trading",
+  },
+  {
+    quote: "The risk-management module alone was worth it. I trade smaller now, journal every position and I've stopped revenge trading after a loss.",
+    name: "Ananya S.",
+    role: "Part-time trader, Bengaluru",
+    course: "Master Institutional Trading",
+  },
+  {
+    quote: "Clear structure and no hype. The VIP group answers questions at midnight, and lifetime access means I can rewatch the market-structure lessons whenever I need them.",
+    name: "Imran A.",
+    role: "Crypto & stocks student, Dubai",
+    course: "Master Institutional Trading (R)",
+  },
+];
+
+// Live sessions from youtube.com/@sauryapraveen/streams, captured 15 Oct 2026.
+// Dates are approximate (YouTube shows "streamed N days ago").
+export const youtubeChannel = {
+  name: "Academiya",
+  handle: "@sauryapraveen",
+  url: "https://www.youtube.com/@sauryapraveen",
+  streamsUrl: "https://www.youtube.com/@sauryapraveen/streams",
+  subscribers: "66K",
+  videos: "189",
+};
+
+export const youtubeStreams = [
+  { id: "T8uqJBff_j0", market: "Gold", symbol: "XAUUSD", date: "2026-10-15", duration: "4:49:03", views: "6.3K" },
+  { id: "rrW0rct4M9s", market: "Gold", symbol: "XAUUSD", date: "2026-10-14", duration: "4:22:40", views: "6.4K" },
+  { id: "7mTqEdrZ3cE", market: "Gold", symbol: "XAUUSD", date: "2026-10-13", duration: "5:40:43", views: "7.1K" },
+  { id: "d0WBdLaZ1e4", market: "Gold", symbol: "XAUUSD", date: "2026-10-12", duration: "5:52:53", views: "6.9K" },
+  { id: "8YcuvszY9Xg", market: "Gold", symbol: "XAUUSD", date: "2026-10-09", duration: "4:42:33", views: "6K" },
+  { id: "LjOy5bKnqzE", market: "Bitcoin", symbol: "BTCUSD", date: "2026-10-03", duration: null, views: "986" },
+];
+
+// Public comments on the channel's lesson "Hammer Pattern vs Inverted Hammer"
+// (youtube.com/watch?v=J0_5alYBaNo), quoted verbatim.
+export const youtubeComments = [
+  { handle: "@abrar.hussain-z8h", text: "Good Sister Develop some more small videos like this one it would be appreciated by small traders who are on the learning stage.", likes: 1 },
+  { handle: "@we_know_01", text: "good detailing\nhr chiz smj mai a gai hai", likes: 0 },
+  { handle: "@Ashish-30R", text: "bahot ache se samaz aaya mam next video mein candlesticks patternpoora padhana", likes: 0 },
+  { handle: "@goldddyyyy", text: "THANK YOU SISTER FOR LEARNING VIDEO ❤️❤️", likes: 1 },
+  { handle: "@RoydipikaRoy", text: "Very good video thanks", likes: 0 },
+  { handle: "@uroojkhan6271", text: "Thank you for helping", likes: 0 },
 ];
