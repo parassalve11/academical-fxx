@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
-import { Award, Infinity as InfinityIcon, PlayCircle, Star, Video } from "lucide-react";
+import { Award, Heart, Infinity as InfinityIcon, PlayCircle, Star, ThumbsUp, Video } from "lucide-react";
 import TradingChart from "./TradingChart";
+import ScrollScene from "./ScrollScene";
 import { courses } from "@/data/site";
 import "./CourseSpotlight.css";
 import "./DeviceShowcase.css";
@@ -91,12 +92,17 @@ function TabletScreen() {
           <Image src="/images/hero/mentor-cream-knit-v1.webp" alt="" fill sizes="80px" className="object-cover object-[50%_6%] scale-[1.9] origin-top" />
           <span>Saurya</span>
         </div>
+        {/* Live reactions drift up the side of the stream. */}
+        <span className="spot-live-reactions">
+          <Heart /><ThumbsUp /><Heart /><ThumbsUp /><Heart />
+        </span>
       </div>
       <ul className="spot-live-chat">
         <li><b>Rohit</b> Waiting for the retest at 4155?</li>
         <li><b>Saurya</b> Yes — let price come to the zone first.</li>
         <li><b>Ananya</b> Stop below the wick, right?</li>
         <li><b>Imran</b> Clear explanation, thank you!</li>
+        <li className="spot-live-typing"><span /><span /><span /></li>
       </ul>
     </div>
   );
@@ -160,7 +166,7 @@ export default function CourseSpotlight() {
           </p>
         </div>
 
-        <div className="course-spotlight-scene">
+        <ScrollScene className="course-spotlight-scene" end={0.02}>
           <DeviceShowcase course={courses[0]} />
           <ul className="course-spotlight-benefits" aria-label="What comes with your course">
             {benefits.map((benefit, index) => (
@@ -171,7 +177,7 @@ export default function CourseSpotlight() {
               </li>
             ))}
           </ul>
-        </div>
+        </ScrollScene>
 
         <div className="course-spotlight-footer">
           <p>A little curiosity. A whole new skill set.</p>

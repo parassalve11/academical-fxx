@@ -174,7 +174,6 @@
     width: 25cqw;
     min-height: 0;
     padding: 1.8cqw 1.9cqw;
-    transform: translateX(var(--tx, 0)) rotate(var(--rot, 0deg));
   }
   .course-spotlight-benefitTitle { font-size: clamp(24px, 2.2cqw, 32px); }
   .course-spotlight-benefitDescription { max-width: 17cqw; }
@@ -186,23 +185,39 @@
   .course-spotlight-card2 { --rot: 5deg; right: 3cqw; top: 4cqw; padding-left: 3.5cqw; }
   .course-spotlight-card4 { --rot: 2deg; right: 0; top: 22cqw; padding-left: 5.5cqw; }
   .course-spotlight-card6 { --rot: -3deg; right: 1.5cqw; top: 40cqw; padding-top: 4cqw; padding-left: 3.5cqw; }
-  .course-spotlight-benefit:nth-child(odd), .course-spotlight-benefit:nth-child(even) { transform: translateX(var(--tx, 0)) rotate(var(--rot)); }
-  .course-spotlight-benefit:nth-child(n):hover { --tx: 0px; transform: translateX(var(--tx)) rotate(var(--rot)) translateY(-6px); }
-  .course-spotlight-card1, .course-spotlight-card3, .course-spotlight-card5 { --from: 14cqw; }
-  .course-spotlight-card2, .course-spotlight-card4, .course-spotlight-card6 { --from: -14cqw; }
+  .course-spotlight-card1, .course-spotlight-card3, .course-spotlight-card5 { --from: 15cqw; }
+  .course-spotlight-card2, .course-spotlight-card4, .course-spotlight-card6 { --from: -15cqw; }
+}
 
-  /* Cards slide out from behind the devices as the section scrolls in. */
-  @supports (animation-timeline: view()) {
-    @media (prefers-reduced-motion: no-preference) {
-      .course-spotlight-benefit {
-        animation: spotlight-card-out linear both;
-        animation-timeline: view();
-        animation-range: entry 0% cover 32%;
-      }
-      @keyframes spotlight-card-out {
-        from { opacity: 0; transform: translateX(var(--from)) rotate(0deg) scale(0.92); }
-        to { opacity: 1; transform: translateX(0) rotate(var(--rot)) scale(1); }
-      }
-    }
+/* Cards glide out from behind the devices as the scene scrolls in. ScrollScene
+   sets --p (0 → 1, smoothed); each card starts a little later (--d), moving
+   from under the devices (--from / --from-y) to its resting tilt (--rot). */
+@media (min-width: 761px) {
+  .course-spotlight-benefits .course-spotlight-benefit {
+    --k: clamp(0, (var(--p, 1) - var(--d, 0)) * 1.45, 1);
+    opacity: clamp(0, var(--k) * 1.6, 1);
+    transform:
+      translate(calc(var(--from, 0px) * (1 - var(--k))), calc(var(--from-y, 0px) * (1 - var(--k))))
+      rotate(calc(var(--rot, 0deg) * var(--k)))
+      scale(calc(0.88 + 0.12 * var(--k)));
+    transition: transform 160ms linear, opacity 160ms linear;
+    will-change: transform;
   }
+  .course-spotlight-benefits .course-spotlight-benefit:hover { transform: rotate(var(--rot, 0deg)) translateY(-6px); transition-duration: 300ms; }
+  .course-spotlight-card1 { --d: 0; }
+  .course-spotlight-card2 { --d: 0.05; }
+  .course-spotlight-card3 { --d: 0.12; }
+  .course-spotlight-card4 { --d: 0.17; }
+  .course-spotlight-card5 { --d: 0.24; }
+  .course-spotlight-card6 { --d: 0.29; }
+}
+@media (min-width: 761px) and (max-width: 1099px) {
+  .course-spotlight-card1, .course-spotlight-card3, .course-spotlight-card5 { --from-y: 70px; }
+  .course-spotlight-card2, .course-spotlight-card4, .course-spotlight-card6 { --from-y: -70px; }
+  .course-spotlight-card1 { --rot: -1.5deg; }
+  .course-spotlight-card3 { --rot: 1deg; }
+  .course-spotlight-card5 { --rot: 1.5deg; }
+  .course-spotlight-card2 { --rot: 1.5deg; }
+  .course-spotlight-card4 { --rot: -1deg; }
+  .course-spotlight-card6 { --rot: -1.5deg; }
 }

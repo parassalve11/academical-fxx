@@ -4,6 +4,8 @@ import Courses from "@/components/Courses";
 import { LearningPath, LiveClasses } from "@/components/Program";
 import CourseSpotlight from "@/components/CourseSpotlight";
 import YouTubeStreams from "@/components/YouTubeStreams";
+import DailyEdge from "@/components/DailyEdge";
+import SystemStory from "@/components/SystemStory";
 import Markets from "@/components/Markets";
 import { News } from "@/components/News";
 import Testimonials from "@/components/Testimonials";
@@ -16,9 +18,11 @@ export default function Home() {
       <Hero />
       <Highlights />
       <Courses />
+      <SystemStory />
       <LearningPath />
       <LiveClasses />
       <CourseSpotlight />
+      <DailyEdge />
       <YouTubeStreams />
       <Markets />
       <Testimonials />
